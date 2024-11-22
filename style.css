@@ -1,19 +1,38 @@
-.mainheader .head nav ul {
+nav {
+  width: 100%;
   display: flex;
   position: absolute;
-  padding: 10px;
-  flex-wrap: wrap;
-}
-.mainheader .head nav ul li {
-  list-style: none;
-}
-.mainheader .head nav ul li a {
-  text-decoration: none;
+  background-color: rgb(232, 99, 99);
   color: black;
-  background-color: white;
-  padding: 8px;
-  border-right: 1px solid black;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 10px;
+}
+nav img {
+  padding-top: 1.5%;
+  padding-left: 1.5%;
+  width: 10%;
+  height: 10%;
+  padding-right: 10%;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  font-size: 20px;
+  padding: 40px;
+  text-align: center;
+}
+nav ul li a {
+  text-decoration: none;
+}
+nav input {
+  margin-top: 3.2%;
+  width: 250px;
+  height: 30px;
+  padding: 3px;
+  border-radius: 50px;
+  color: black;
+  font-size: 15px;
 }/*# sourceMappingURL=style.css.map */
