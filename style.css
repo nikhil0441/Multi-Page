@@ -1,13 +1,15 @@
 nav {
+  margin-top: 0px;
   width: 100%;
+  z-index: 1;
+  margin: 0px;
   display: flex;
-  position: relative;
+  position: fixed;
   background-color: white;
   color: black;
 }
 nav img {
   padding-top: 1.5%;
-  padding-left: 1.5%;
   width: 10%;
   height: 10%;
   padding-right: 10%;
@@ -149,7 +151,6 @@ nav i {
   position: absolute;
   align-items: center;
   background-repeat: no-repeat;
-  z-index: 2;
   border-radius: 10px;
 }
 
@@ -179,4 +180,56 @@ nav i {
   font-size: 20px;
   border-radius: 10px;
   margin: 10px;
+}
+
+#fles {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+#fles .flex1 {
+  width: 25%;
+  height: 500px;
+  border-radius: 10px;
+  margin-right: 10px;
+  background-color: aqua;
+  box-shadow: 10px 10px 10px 0.2px rgb(71, 68, 68);
+}
+#fles .flex2 {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 30%;
+  height: 500px;
+  background-image: url(/istockphoto-2155965052-1024x1024.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+#fles .flex3 {
+  width: 25%;
+  height: 500px;
+  background-color: aqua;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 0.2px rgb(71, 68, 68);
+}
+#fles .flex3 h1 {
+  font-size: 30px;
+  color: black;
+  padding: 10px;
+}
+#fles .flex3 p {
+  font-size: 20px;
+  color: white;
+  padding: 20px;
+}
+
+#properties {
+  font-size: 40px;
+  align-items: center;
+  justify-items: center;
+}
+#properties #pro {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
 }/*# sourceMappingURL=style.css.map */
