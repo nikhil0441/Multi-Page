@@ -1,4 +1,4 @@
-@mixin btn(){
+@mixin btn() {
   background-color: red;
   color: white;
   padding: 10px;
@@ -7,15 +7,13 @@
   margin: 10px;
 }
 
-@mixin box(){
-
-  width: 400px;
-  height: 650px;
+@mixin box() {
+  width: 410px;
+  height: 530px;
   // padding: 20px;
   // margin-left: 10px;
   // margin-bottom: 10px;
   border-radius: 10px;
-  background-color: rgb(172, 163, 163);
+  background-color: rgb(139, 171, 102);
   color: black;
-  
 }
