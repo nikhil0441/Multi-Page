@@ -10,10 +10,20 @@
 @mixin box() {
   width: 410px;
   height: 530px;
+  border: solid 3px red;
   // padding: 20px;
-  // margin-left: 10px;
+  margin-left: 10px;
   // margin-bottom: 10px;
   border-radius: 10px;
-  background-color: rgb(139, 171, 102);
-  color: black;
+  background-color: rgb(85, 113, 142);
+  color: rgb(130, 65, 65);
+}
+
+@mixin inportant() {
+  border: solid 2px black;
+  display: flex;
+  justify-content: center; // Horizontally center elements
+  align-items: center; // Vertically center elements
+  text-align: center; // Align text if needed
+  flex-direction: column; // Optional: Stack child elements vertically
 }

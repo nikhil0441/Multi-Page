@@ -4,72 +4,73 @@
   margin: 0px;
   //box-sizing: border-box;
 }
-nav {
-  margin-top: 0%;
-  width: 100%;
-  z-index: 1;
 
-  display: flex;
-  flex-wrap: wrap;
-  position: fixed;
-  background-color: white;
-  color: black;
-  img {
-    // padding-top: 1.5%;
-    // padding-left: 1.5%;
-    width: 10%;
-    height: 10%;
-    padding-right: 10%;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    // margin-right: 10%;
-  }
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    li {
-      flex-wrap: wrap;
-      list-style: none;
-      font-size: 20px;
-      padding: 40px;
-      text-align: center;
+.nav-link {
+  color: #333;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
 
-      a {
-        padding: 20px;
-        color: black;
-        text-decoration: none;
-      }
-      a:hover {
-        background-color: rgb(135, 136, 136);
-        font-size: 20px;
-      }
-    }
-  }
-  input {
-    margin-left: 80px;
-    margin-top: 2.2%;
-    width: 250px;
-    height: 30px;
-    padding: 3px;
-    border-radius: 50px;
-    color: black;
-    font-size: 15px;
-  }
-  i {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 15px;
-    position: absolute;
-    right: 4%;
-    top: 46.7%;
+  &:hover {
+    color: #ff5252; // Solid color fallback
+    transform: scale(1.1);
   }
 }
 
+//nav {
+//   margin-top: 0%;
+//   width: 100%;
+//   z-index: 1;
+
+//   display: flex;
+//   flex-wrap: wrap;
+//   position: fixed;
+//   background-color: white;
+//   color: black;
+//   ul {
+//     display: flex;
+//     flex-wrap: wrap;
+//     li {
+//       flex-wrap: wrap;
+//       list-style: none;
+//       font-size: 20px;
+//       padding: 40px;
+//       text-align: center;
+
+//       a {
+//         padding: 20px;
+//         color: black;
+//         text-decoration: none;
+//       }
+//       a:hover {
+//         background-color: rgb(135, 136, 136);
+//         font-size: 20px;
+//       }
+//     }
+//   }
+//   input {
+//     margin-left: 80px;
+//     margin-top: 2.2%;
+//     width: 250px;
+//     height: 30px;
+//     padding: 3px;
+//     border-radius: 50px;
+//     color: black;
+//     font-size: 15px;
+//   }
+//   i {
+//     display: flex;
+//     flex-wrap: wrap;
+//     font-size: 15px;
+//     position: absolute;
+//     right: 12.5%;
+//     top: 46.7%;
+//   }
+// }
+// nav end
 // Home CSS are starts//
 
 .homes {
-  background-image: url(/istockphoto-144292803-1024x1024.jpg);
+  background-image: url(images/istockphoto-144292803-1024x1024.jpg);
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
@@ -156,7 +157,7 @@ nav {
 .boxes {
   width: 100%;
   height: 100vh;
-  background-image: url(/gus-ruballo-h5QNclJUiA8-unsplash.jpg);
+  background-image: url(images/gus-ruballo-h5QNclJUiA8-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -233,12 +234,22 @@ nav {
     background-color: aqua;
     box-shadow: 10px 10px 10px 0.2px rgb(71, 68, 68);
   }
+  .flex1 h1 {
+    font-size: 30px;
+    color: rgb(51, 44, 44);
+    padding: 10px;
+  }
+  .flex1 p {
+    font-size: 20px;
+    color: rgb(24, 22, 22);
+    padding: 20px;
+  }
   .flex2 {
     margin-left: 10px;
     margin-right: 10px;
     width: 30%;
     height: 500px;
-    background-image: url(/istockphoto-2155965052-1024x1024.jpg);
+    background-image: url(images/istockphoto-2155965052-1024x1024.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
@@ -256,126 +267,54 @@ nav {
     }
     p {
       font-size: 20px;
-      color: white;
+      color: rgb(51, 44, 44);
       padding: 20px;
     }
   }
 }
 
+// property all image of Villas start
 #properties {
   font-size: 40px;
   align-items: center;
   justify-items: center;
-  #pro {
-    display: grid;
-
-    grid-template-columns: auto auto auto;
-    .propertie {
-      margin: 10px;
-      img {
-        width: 400px;
-        height: 250px;
-        border-radius: 10px;
-        transition: all 0.3s ease;
-      }
-      img:hover {
-        width: 400px;
-        height: 280px;
-
-        //   border-radius: 20px;
-      }
-      @include box();
-    }
-  }
+  font-size: 22px;
+  border: solid 2px black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+
+#pro {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.propertie {
+  margin: 10px;
+  overflow: hidden; /* Ensure the image doesn't exceed its container */
+}
+
+.propertie img {
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* Smooth transition for zoom */
+}
+
+.propertie img:hover {
+  transform: scale(1.1); /* Zoom effect */
+}
+// property all image of Villas end
+
 footer {
   width: 100%;
-  height: 20vh;
-  align-items: center;
-  text-align: center;
-  padding-top: 30px;
-  background-color: rgb(127, 130, 130);
+  height: 8vh;
+  justify-content: center; // Horizontally center elements
+  align-items: center; // Vertically center elements
+  text-align: center; // Align text if needed
+  flex-direction: column;
+  background-color: rgb(112, 133, 133);
   color: black;
 }
-
-#contact {
-  width: 100%;
-  height: 100vh;
-  text-align: center;
-  justify-content: center;
-  background-image: url(/istockphoto-2155879454-1024x1024.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  // filter: blur(10px);
-
-  .contacts {
-    display: grid;
-    grid-template-columns: auto auto;
-    .map {
-      width: 50%;
-      height: 50%;
-      background-color: aqua;
-      z-index: 1;
-    }
-    .profileid {
-      width: 50%;
-      height: 50%;
-      z-index: 1;
-      background-color: aqua;
-    }
-  }
-}
-
-// Properties Css Starts
-#head {
-  width: 100%;
-  height: 100vh;
-  .headingPart {
-    // display: flex;
-
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100vh;
-    padding: 100px;
-    text-align: center;
-
-    background-image: url(/alexandra-gorn-JIUjvqe2ZHg-unsplash.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    h2 {
-      font-size: 40px;
-      color: red;
-      font-style: italic;
-      font-family: "Courier New", Courier, monospace;
-    }
-    h1 {
-      font-size: 60px;
-      color: black;
-      font-style: italic;
-      font-family: "Courier New", Courier, monospace;
-    }
-  }
-  .contianer {
-    display: grid;
-
-    grid-template-columns: auto auto auto;
-    .propertie {
-      margin: 10px;
-      img {
-        width: 400px;
-        height: 250px;
-        border-radius: 10px;
-        transition: all 0.3s ease;
-      }
-      img:hover {
-        width: 400px;
-        height: 280px;
-
-        //   border-radius: 20px;
-      }
-      @include box();
-    }
-  }
+.inportant {
+  @include inportant();
 }
