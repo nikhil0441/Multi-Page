@@ -1,6 +1,8 @@
 * {
   padding: 0px;
   margin: 0px;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
 }
 
 .nav-link {
@@ -262,23 +264,29 @@ footer {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  animation: none;
-  display: block;
   margin: 0 auto;
-  animation: bimages 5s infinite ease-in-out;
+  animation: bimages 7s infinite ease-in-out;
 }
 
 @keyframes bimages {
-  0% {
-    background-image: url(/images/pexels-catscoming-707581.jpg);
+  0%,
+  20% {
+    background-image: url("/images/pexels-catscoming-707581.jpg");
   }
-  50% {
-    background-image: url(/images/pexels-dtanpt-1329711.jpg);
+  20%,
+  40% {
+    background-image: url("/images/pexels-dtanpt-1329711.jpg");
   }
-  75% {
-    background-image: url(/images/pexels-emrecan-2079246.jpg);
+  40%,
+  60% {
+    background-image: url("/images/pexels-emrecan-2079246.jpg");
   }
+  60%,
+  80% {
+    background-image: url("/images/pexels-fotoaibe-1571468.jpg");
+  }
+  80%,
   100% {
-    background-image: url(/images/pexels-fotoaibe-1571468.jpg);
+    background-image: url("/images/pexels-catscoming-707581.jpg"); /* Loop back smoothly */
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

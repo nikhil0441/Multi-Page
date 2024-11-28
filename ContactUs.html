@@ -8,6 +8,8 @@
       href="https://media.istockphoto.com/id/1486639158/photo/green-leaves-texture-in-the-form-of-an-arrow.webp?a=1&b=1&s=612x612&w=0&k=20&c=4cADlz_wA6hlNVm5IxRoOfsW6cUmFXqe6CBbzS1nI0U="
     />
     <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/contectUs.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
@@ -24,6 +26,7 @@
     <title>NestAura</title>
   </head>
   <body>
+    <!-- nav and header start -->
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -50,7 +53,7 @@
               class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
               style="--bs-scroll-height: 100px"
             >
-              <!-- inner links of nav -->
+              <!-- inner link's of nav -->
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html"
                   >Home</a
@@ -71,6 +74,7 @@
                 <a class="nav-link" href="ContactUs.html">ContactUs</a>
               </li>
             </ul>
+            <!-- link end of nav  -->
             <form class="d-flex" role="search">
               <input
                 class="form-control me-2"
@@ -85,8 +89,32 @@
           </div>
         </div>
       </nav>
+      <!-- nav end -->
     </header>
-    
+
+    <main>
+      <!-- contect form start-->
+      <div class="contact-form-container">
+        <h2>Contact Us</h2>
+        <form action="#" method="post" class="contact-form">
+          <div class="form-group">
+            <input type="text" name="name" required />
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" required />
+            <label for="email">Your Email</label>
+          </div>
+          <div class="form-group">
+            <textarea name="message" rows="5" required></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      <!-- contect form end-->
+    </main>
+
     <footer>
       <h2>
         Copyright © 2048 Villa Agency Co., Ltd. All rights reserved. Design:

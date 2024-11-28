@@ -15,60 +15,6 @@
     transform: scale(1.1);
   }
 }
-
-//nav {
-//   margin-top: 0%;
-//   width: 100%;
-//   z-index: 1;
-
-//   display: flex;
-//   flex-wrap: wrap;
-//   position: fixed;
-//   background-color: white;
-//   color: black;
-//   ul {
-//     display: flex;
-//     flex-wrap: wrap;
-//     li {
-//       flex-wrap: wrap;
-//       list-style: none;
-//       font-size: 20px;
-//       padding: 40px;
-//       text-align: center;
-
-//       a {
-//         padding: 20px;
-//         color: black;
-//         text-decoration: none;
-//       }
-//       a:hover {
-//         background-color: rgb(135, 136, 136);
-//         font-size: 20px;
-//       }
-//     }
-//   }
-//   input {
-//     margin-left: 80px;
-//     margin-top: 2.2%;
-//     width: 250px;
-//     height: 30px;
-//     padding: 3px;
-//     border-radius: 50px;
-//     color: black;
-//     font-size: 15px;
-//   }
-//   i {
-//     display: flex;
-//     flex-wrap: wrap;
-//     font-size: 15px;
-//     position: absolute;
-//     right: 12.5%;
-//     top: 46.7%;
-//   }
-// }
-// nav end
-// Home CSS are starts//
-
 .homes {
   background-image: url(images/istockphoto-144292803-1024x1024.jpg);
   width: 100%;
@@ -319,43 +265,37 @@ footer {
   @include inportant();
 }
 
-
 //properts Details Scss starts
 
-
-#headings{
-  
-// background-image: url(/images/pexels-expect-best-79873-323780.jpg);
+#headings {
   width: 100%;
   height: 100vh;
-  
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-   animation: none;
-  display: block;
   margin: 0 auto;
-  // transition: all 5s ease-in-out;
-  
-  
-    // width: 100%;
-    // height: 100vh;
-    // transition: all s;
-    animation: bimages 5s infinite ease-in-out;
-  
+  animation: bimages 7s infinite ease-in-out;
 }
-@keyframes bimages {
-  0% {
-   background-image: url(/images/pexels-catscoming-707581.jpg);
-  }
-  50%{
-    background-image: url(/images/pexels-dtanpt-1329711.jpg);
-  }
-  75% {
-    background-image: url(/images/pexels-emrecan-2079246.jpg);
 
+@keyframes bimages {
+  0%,
+  20% {
+    background-image: url("/images/pexels-catscoming-707581.jpg");
   }
-  100%{
-    background-image: url(/images/pexels-fotoaibe-1571468.jpg);
+  20%,
+  40% {
+    background-image: url("/images/pexels-dtanpt-1329711.jpg");
+  }
+  40%,
+  60% {
+    background-image: url("/images/pexels-emrecan-2079246.jpg");
+  }
+  60%,
+  80% {
+    background-image: url("/images/pexels-fotoaibe-1571468.jpg");
+  }
+  80%,
+  100% {
+    background-image: url("/images/pexels-catscoming-707581.jpg"); /* Loop back smoothly */
   }
 }
