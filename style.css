@@ -1,8 +1,6 @@
 * {
   padding: 0px;
   margin: 0px;
-  box-sizing: border-box;
-  font-family: "Arial", sans-serif;
 }
 
 .nav-link {
@@ -49,8 +47,8 @@
 }
 .homeabout img {
   padding: 10%;
-  width: 65%;
-  height: 420px;
+  width: 85%;
+  height: 500px;
 }
 .homeabout .homeabout1 {
   margin-top: 30px;
@@ -88,13 +86,45 @@
 }
 .homeabout .homeabout2 {
   width: 300px;
+  background-color: rgb(78, 77, 77);
   height: 520px;
   border-radius: 20px;
   border: 1px solid black;
   margin: 30px;
   margin-left: 50px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  padding: 10px;
+}
+.homeabout .homeabout2 .details {
+  font-size: 20px;
+  padding: 30px;
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  visibility: hidden;
+}
+.homeabout .homeabout2:hover .details {
+  color: white;
+  animation: revealD 6s infinite ease-in-out;
 }
 
+@keyframes revealD {
+  0% {
+    max-height: 0;
+    visibility: visible;
+    transform: translate(-20px);
+  }
+  50% {
+    max-height: 200px;
+  }
+  100% {
+    max-height: 400px;
+    color: red;
+    transform: translateY(0);
+  }
+}
 .boxes {
   width: 100%;
   height: 100vh;
@@ -160,6 +190,7 @@
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 #fles .flex1 {
@@ -227,6 +258,14 @@
   overflow: hidden; /* Ensure the image doesn't exceed its container */
 }
 
+.inportant a {
+  text-decoration: none;
+  color: red;
+}
+.inportant span {
+  color: Black;
+}
+
 .propertie img {
   width: 400px;
   height: 250px;
@@ -268,25 +307,41 @@ footer {
   animation: bimages 7s infinite ease-in-out;
 }
 
+.contact-form-container {
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.form-group:hover {
+  animation: background 1s forwards;
+  color: black;
+}
+
+@keyframes background {
+  0% {
+    background-color: #ffffff;
+  }
+  50% {
+    background-color: #f8e8f8;
+  }
+  100% {
+    background-color: #d1c4d1;
+  }
+}
 @keyframes bimages {
-  0%,
-  20% {
+  0%, 20% {
     background-image: url("/images/pexels-catscoming-707581.jpg");
   }
-  20%,
-  40% {
+  20%, 40% {
     background-image: url("/images/pexels-dtanpt-1329711.jpg");
   }
-  40%,
-  60% {
+  40%, 60% {
     background-image: url("/images/pexels-emrecan-2079246.jpg");
   }
-  60%,
-  80% {
+  60%, 80% {
     background-image: url("/images/pexels-fotoaibe-1571468.jpg");
   }
-  80%,
-  100% {
+  80%, 100% {
     background-image: url("/images/pexels-catscoming-707581.jpg"); /* Loop back smoothly */
   }
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -6,6 +6,7 @@
 }
 
 .nav-link {
+  // position: fixed;
   color: #333;
   transition: all 0.3s ease-in-out;
   display: inline-block;
@@ -50,8 +51,8 @@
 
   img {
     padding: 10%;
-    width: 65%;
-    height: 420px;
+    width: 85%;
+    height: 500px;
   }
   .homeabout1 {
     margin-top: 30px;
@@ -92,14 +93,55 @@
   }
   .homeabout2 {
     width: 300px;
+    background-color: rgb(78, 77, 77);
     height: 520px;
     border-radius: 20px;
     border: 1px solid black;
     margin: 30px;
     margin-left: 50px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    padding: 10px;
+    .details
+    {
+      
+      font-size: 20px;
+      padding: 30px;
+      max-height: 0;
+      overflow: hidden;
+      position: relative;
+      visibility: hidden;
+
+    }
+     
+  }
+  .homeabout2:hover{
+    .details{
+      // background-color: black;
+      color: white;
+      animation: revealD 6s infinite ease-in-out;
+    }
   }
 }
 
+@keyframes revealD{
+  0%{
+    max-height: 0;
+    visibility: visible;
+    transform: translate(-20px);
+  }
+  50%{
+    max-height: 200px;
+
+  }
+  100%{
+    max-height: 400px;
+    color: red;
+    transform: translateY(0);
+  }
+
+}
 .boxes {
   width: 100%;
   height: 100vh;
@@ -171,6 +213,7 @@
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   .flex1 {
     width: 25%;
@@ -232,6 +275,7 @@
 #pro {
   display: grid;
   grid-template-columns: auto auto auto;
+  
 }
 
 .propertie {
@@ -239,6 +283,19 @@
   overflow: hidden; /* Ensure the image doesn't exceed its container */
 }
 
+.inportant{
+  
+  a{
+    text-decoration: none;
+    color:red;
+  }
+  // p{
+  //   color: white;
+  // }
+  span{
+    color: Black;
+  }
+}
 .propertie img {
   width: 400px;
   height: 250px;
@@ -275,6 +332,29 @@ footer {
   background-repeat: no-repeat;
   margin: 0 auto;
   animation: bimages 7s infinite ease-in-out;
+}
+
+.contact-form-container{
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.form-group:hover{
+ animation: background 1s forwards;
+ color: black;
+}
+
+@keyframes background{
+  0% {
+    background-color:#ffffff;
+    // transform: scale(1);
+  }
+  50%{
+    background-color: #f8e8f8;
+  }
+  100%{
+    background-color: #d1c4d1;
+    // transform:scale(1.05) ;
+  }
 }
 
 @keyframes bimages {

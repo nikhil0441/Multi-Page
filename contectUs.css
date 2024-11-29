@@ -10,6 +10,8 @@ body {
   background: #f5f5f5;
   /* Compensate for fixed navbar */
   display: flex;
+  flex-wrap: wrap;
+  
   flex-direction: column;
 }
 
