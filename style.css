@@ -199,15 +199,15 @@
   border-radius: 10px;
   margin-right: 10px;
   background-color: aqua;
-  box-shadow: 10px 10px 10px 0.2px rgb(71, 68, 68);
+  box-shadow: 10px 10px 11px 0.2px rgb(71, 68, 68);
 }
 #fles .flex1 h1 {
-  font-size: 30px;
+  font-size: 29px;
   color: rgb(51, 44, 44);
-  padding: 10px;
+  padding: 9px;
 }
 #fles .flex1 p {
-  font-size: 20px;
+  font-size: 18px;
   color: rgb(24, 22, 22);
   padding: 20px;
 }
